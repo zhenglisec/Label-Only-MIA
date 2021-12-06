@@ -4,6 +4,8 @@ This repository contains the implementation for "Membership Leakage in Label-Onl
 
 Code will come soon.
 
+Our algorithm is also already available on [Adversarial Robustness Toolbox (ART)](https://adversarial-robustness-toolbox.readthedocs.io/en/latest/modules/attacks/inference/membership_inference.html#membership-inference-label-only-decision-boundary) which are two popular Python packages to craft adversarial examples for machine learning models.
+
 ## Citation
 ```bibtex
 @inproceedings{LZ21,

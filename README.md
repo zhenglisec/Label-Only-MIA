@@ -1,6 +1,6 @@
 # Decision-based Membership Inference Attacks
 
-This repository contains the implementation for "Membership Leakage in Label-Only Exposures" (ACM CCS 2021)
+This repository contains the implementation for [Membership Leakage in Label-Only Exposures](https://arxiv.org/abs/2007.15528) (ACM CCS 2021)
 
 Code will come soon.
 

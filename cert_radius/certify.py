@@ -1,9 +1,4 @@
 '''
-Randomized Smoothing Certification: Hard-RS and Soft-RS
-Soft-RS uses empirical Bernstein bound
-
-MACER: Attack-free and Scalable Robust Training via Maximizing Certified Radius
-ICLR 2020 Submission
 
 References:
 [1] J. Cohen, E. Rosenfeld and Z. Kolter. 

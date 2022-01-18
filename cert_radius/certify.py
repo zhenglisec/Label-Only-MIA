@@ -1,5 +1,4 @@
 '''
-
 References:
 [1] J. Cohen, E. Rosenfeld and Z. Kolter. 
 Certified Adversarial Robustness via Randomized Smoothing. In ICML, 2019.

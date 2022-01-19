@@ -17,7 +17,7 @@ from runx.logx import logx
 def certify(model, device, dataset, transform, num_classes, matfile=None,
             mode='hard', start_img=0, num_img=500, skip=1, sigma=0.25, N0=100, N=100000,
             alpha=0.001, batch=1000, verbose=False,
-            grid=(0.25, 0.50, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25), beta=1.0):
+            grid=(0.1, 0.15, 0.2, 0.25, 0.50, 0.75, 1.0, 1.25, 1.5), beta=1.0):
   logx.msg('===certify(N={}, sigma={}, mode={})==='.format(N, sigma, mode))
 
   model.eval()

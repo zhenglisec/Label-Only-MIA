@@ -3,43 +3,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-class Attack_AdvRug(nn.Module):
-    def __init__(self,num_classes):
-        self.num_classes=num_classes
-        super(Attack_AdvRug, self).__init__()
-        self.features=nn.Sequential(
-            nn.Linear(10,1024),
-            nn.ReLU(),
-            nn.Linear(1024,512),
-            nn.ReLU(),
-            nn.Linear(512,64),
-            nn.ReLU(),
-            )
-        self.labels=nn.Sequential(
-           nn.Linear(num_classes,128),
-            nn.ReLU(),
-            nn.Linear(128,64),
-            nn.ReLU(),
-            )
-        self.combine=nn.Sequential(
-            nn.Linear(64*2,256),
-            
-            nn.ReLU(),
-            nn.Linear(256,128),
-            
-            nn.ReLU(),
-            nn.Linear(128,64),
-            nn.ReLU(),
-            nn.Linear(64,1),
-            )
-    
-        self.output= nn.Sigmoid()
-    def forward(self,x,l):
-
-        out_x = self.features(x)
-        out_l = self.labels(l)
-        is_member =self.combine(torch.cat((out_x  ,out_l),1))
-        return self.output(is_member)
 
 
 mycfg = {
